@@ -57,7 +57,11 @@ sap.ui.define([
         },
 
         isFill: function(){
-            return this.signaturePad.fill = bBoolean;
+            return this.signaturePad.fill;
+        },
+
+        setFill: function (bBoolean){
+            this.SignaturePad.fill = bBoolean;
         },
 
         getSignature: function(){
