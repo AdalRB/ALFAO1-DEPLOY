@@ -40,6 +40,9 @@ sap.ui.define([
               const signature = this.getView().byId("signature");
               if(data.MediaContent !== ""){
                 signature.setSignature("data:image/png;base64," + data.MediaContent);
+                signature.setFill(true);
+              }else{
+                signature.setFill(false);
               }
             }.bind(this),
             error: function (data){

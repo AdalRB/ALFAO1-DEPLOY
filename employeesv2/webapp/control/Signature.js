@@ -48,14 +48,16 @@ sap.ui.define([
                 console.error(e);
             }
         },
-
+        
         clear: function(){
+            try{
             this.signaturePad.clear();
             this.signaturePad.fill = false;
+        } catch (err){}
         },
 
         isFill: function(){
-            return this.signaturePad.fill;
+            return this.signaturePad.fill = bBoolean;
         },
 
         getSignature: function(){
