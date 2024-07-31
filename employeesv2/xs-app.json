@@ -1,13 +1,13 @@
 {
   "welcomeFile": "/index.html",
-  "authenticationMethod": "route",
+  "authenticationMethod": "none",
   "routes": [
     {
-      "source": "^/V2/Northwind/Northwind.svc/(.*)$",
-      "target": "/V2/northwind/orthwind.svc/$1",
-      "destination": "Northwind",
-      "authenticationType": "none",
-      "csrfProtection": false
+      "source": "^/V2/(.*)$", 
+      "target": "/V2/$1", 
+      "destination": "Northwind", 
+      "authenticationType": "none", 
+      "csrfProtection": false 
     },
     {
       "source": "^/sap/opu/odata/sap/YSAPUI5_SRV_01/(.*)$",
